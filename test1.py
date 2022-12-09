@@ -37,7 +37,7 @@ print(x[len(x)-1])
 
 print(x[1:3])
 
-print(type(x))
+
 for data in x:
     print(data)
 
@@ -69,60 +69,16 @@ x.extend(y)
 print(x)
 print(list.__sizeof__(x))
 
-# tuple
-
 t = ('a','b','c')
 print(tuple.__sizeof__(t))
 
 t = ('a','x','d','d')
 print(tuple.__sizeof__(t))
 
-print(type(t))
-
-t_list = list(t)
-
-print(type(t_list))
-
-t_list.append('7')
-
-print(tuple(t_list))
-
-
+# tuple
 # set
-t_set = {'a','2','56',1, 'a', 2}
-print(t_set)
-t_set.add(40)
-print(t_set)
-
-t_set.remove(2)
-print(t_set)
-
-# lis = [1,3,4,5,9,'a','b','c',4, 6, 9]
-# print(list(set(lis)))
-
-
 # dict
 
-cv = {'4', 6}
-print(type(cv))
 
-dict_obj = {
-    'name':'prabhakar',
-    'id':1,
-    'phone':323567
-}
-
-print(type(dict_obj))
-print(dict_obj['name'])
-print(dict_obj['id'])
-
-print(dict_obj.keys())
-print(dict_obj.values())
-
-input_key = ['phone','name']
-
-for x in dict_obj.keys():
-    if x in input_key:
-        print(f'key is {x} and value is {dict_obj[x]}')
 
 
